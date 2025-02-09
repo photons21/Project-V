@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clowery</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Parisienne&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to clowery</h1>
+        <p>Choose today's date💖</p>
+    </div>
+    <div class="container">
+        <div class="date-box" id="date-9" onclick="showPopup()">9th</div>
+        <div class="middle-boxes">
+            <div class="date-box" id="date-10" onclick="showYodaPopup(10)">10th</div>
+            <div class="date-box" id="date-11" onclick="showYodaPopup(11)">11th</div>
+            <div class="date-box" id="date-12" onclick="showYodaPopup(12)">12th</div>
+            <div class="date-box" id="date-13" onclick="showYodaPopup(13)">13th</div>
+        </div>
+        <div class="date-box" id="big-date" onclick="showYodaPopup(14)">14th</div>
+    </div>
+    <div class="countdown">
+        
+    </div>
+    <div class="popup" id="popup">
+        <p>Happy 5 months!</p>
+        <button onclick="nextPopup()">I love you</button>
+    </div>
+    <div class="popup" id="popup2">
+        <p>Will you be my Valentine?</p>
+        <button onclick="showConfirmation()">Yes</button>
+        <button onclick="showWarning()">No</button>
+    </div>
+    <div class="popup" id="warning">
+        <p>Choose wisely, or else your gf might kill you!</p>
+    </div>
+    <div class="yoda-popup" id="yoda-popup">
+        <p id="yoda-text">Patient one shall be...</p>
+        <p id="yoda-timer"></p>
+    </div>
+    <div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+    <p>Surprise Message! ❤️</p>
+    <button onclick="hidePopup()">Close</button>
+</div>
+
+    <footer>
+        Made with ❤️ by Ananya
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
